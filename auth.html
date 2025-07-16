@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroFocus | Login & Signup</title>
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+   
+
+  <div class="auth-wrapper">
+    <div class="theme-switch">
+      <label>
+        <input type="checkbox" id="themeToggle" onchange="toggleTheme()" />
+        <span class="slider"></span>
+        <span class="label-text" id="modeLabel">🌙 Dark Mode</span>
+      </label>
+    </div>
+
+    <h2 id="formTitle">Welcome to NeuroFocus</h2>
+
+    <div class="auth-form active" id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div class="auth-form" id="signupForm">
+      <input type="text" id="signupName" placeholder="Full Name" />
+      <input type="email" id="signupEmail" placeholder="Email" />
+      <input type="password" id="signupPassword" placeholder="Password" />
+      <button onclick="signup()">Sign Up</button>
+    </div>
+
+    <div class="switch">
+      <span class="toggle-link" onclick="toggleForms()">Don't have an account? Sign up</span>
+    </div>
+  </div>
+  
+
+  <script src="auth.js"></script>
+</body>
+</html>
+
+ 

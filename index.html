@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>NeuroFocus</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+  <video id="videos" autoplay muted loop playsinline></video>
+  
+
+  <div class="container">
+    <h1>Neuro-Focus</h1>
+    <p>a calm space for you to focus better</p>
+    <div class="scene-selector">
+    <button onclick="changevideos('Rain')">Rain</button>
+    <button onclick="changevideos('Forest')">Forest</button>
+    <button onclick="changevideos('Cafe')">Cafe</button>
+    <button onclick="changevideos('Waves')">Waves</button>
+    <button onclick="changevideos('Fireplace')">Fireplace</button>
+    <button id="logoutBtn">Logout</button>
+
+</div>
+<div class="volume-control">
+  <label for="volume">Volume:</label>
+  <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" />
+</div>
+
+<div class="sound-controls">
+  <button id="toggleSoundBtn">🔊 Sound On</button>
+</div>
+
+
+
+    <div class="buttons">
+      <div class="timer-container">
+      <h2 id="timer-display">25:00</h2>
+
+  <div class="timer-controls">
+    <button onclick="startSession()">Start</button>
+    <button onclick="pauseSession()">Pause</button>
+    <button onclick="resetSession()">Reset</button>
+  </div>
+
+  <div class="timer-options">
+  <label for="customTime">Enter Minutes:</label>
+  <input type="number" id="customTime" min="1" value="25" />
+  <button onclick="setCustomTime()">Set Time</button>
+</div>
+<div id="session-alert" class="toast">🎉 Focus session complete!</div>
+
+
+
+</div>
+      
+      <button id="toggleMode">Dark/Light Mode</button>
+    </div>
+  </div>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
