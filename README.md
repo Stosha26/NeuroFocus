@@ -11,14 +11,11 @@ Built with **HTML**, **CSS**, and **JavaScript**, NeuroFocus combines soothing s
 - 🌄 Changeable background scenes
 - 🌙 Light / Dark mode
 - ⏲️ Simple focus session timer
-- 💾 Saves your preferences locally (no login required)
 
 ---
 
 ## 🌐 Live Website
-👉 [Visit NeuroFocus here]()
-
-> Replace the link above with your actual website or GitHub Pages link.
+👉 [Visit NeuroFocus here](https://stosha26.github.io/NeuroFocus/)
 
 ---
 
